@@ -28,7 +28,7 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'Please provide usage instructions for your project',
+        message: 'How will someone use this project?',
     },
     {
         type: 'list',
@@ -74,7 +74,7 @@ const questions = [
 // TODO: Create a function to write README file
 const fileName = 'newREADME.md'
 function writeToFile(fileName, data) {
-    fs.writeFile(filename, data, (err) => (
+    fs.writeFile(fileName, data, (err) => (
         err ? console.error(err) : console.log('logged sucessfully')
     ))
 }
